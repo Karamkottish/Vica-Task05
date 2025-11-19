@@ -1,0 +1,334 @@
+/* GLOBAL FIX — Prevent Horizontal Scrolling*/
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.breadcrumb-wrapper {
+    width: 100%;
+    background: #F5F5F5;
+    padding: 25px 0;
+    margin-top: 10px;
+}
+
+.breadcrumb {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.breadcrumb p {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    color: #888;
+}
+
+.breadcrumb .current {
+    color: #111;
+    font-weight: 500;
+}
+
+
+
+/* open STREET MAP*/
+#realMap {
+    width: 100%;
+    height: 390px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+
+/* CONTACT SECTION*/
+.contact-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    gap: 40px;
+}
+
+.contact-left {
+    width: 40%;
+}
+
+.contact-left h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-left p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-item {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-item img {
+    width: 38px;
+}
+
+.contact-item h4 {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contact-item p {
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+/*CONTACT FORM*/
+.contact-form {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.row input {
+    flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 140px;
+    resize: none;
+}
+
+
+
+/* CHECKBOX */
+.save-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.save-check input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #ff7a00;
+    margin: 0;
+    cursor: pointer;
+}
+
+.save-check label span {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+
+
+
+/*BUTTON*/
+.submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 10px 24px;
+    gap: 10px;
+    background: #FF782D;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+    background: #e76a00;
+}
+
+
+
+/*SIDEBAR (MOBILE) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100%;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    z-index: 9999;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar .close-btn {
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 14px 0;
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+    color: #333;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: none;
+}
+
+.overlay.show {
+    display: block;
+    z-index: 9000;
+}
+
+
+
+/* HAMBURGER*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #333;
+    border-radius: 3px;
+}
+
+
+
+/*RESPONSIVENESS*/
+@media (max-width: 992px) {
+
+    .desktop-nav,
+    .nav-right {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-left {
+        width: 100%;
+    }
+
+    #realMap {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .breadcrumb p {
+        font-size: 16px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}
+
+
+
+/*FOOTER*/
+.footer {
+    background: #f8f8f8;
+    padding: 50px 0;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-col {
+    width: 25%;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    background: #eee;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-col {
+        width: 100%;
+    }
+}

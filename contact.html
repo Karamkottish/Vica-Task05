@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – EduPress</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- MOBILE SIDEBAR MENU -->
+<div id="sidebar" class="sidebar">
+    <div class="close-btn" onclick="closeSidebar()">✕</div>
+
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="faq.html">FAQs</a>
+    <a href="#">Premium Theme</a>
+</div>
+
+<div id="overlay" class="overlay" onclick="closeSidebar()"></div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+
+    <div class="logo">
+      <img src="assets/images/LOGO.png" class="logo-img">
+    </div>
+
+    <nav class="nav-links desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="blog.html">Blog</a>
+
+      <div class="dropdown">
+        <a href="#" class="drop-btn active">Page ▾</a>
+        <div class="dropdown-content">
+            <a href="contact.html">Contact Us</a>
+            <a href="faq.html">FAQs</a>
+        </div>
+      </div>
+
+      <a href="#">Premium Theme</a>
+    </nav>
+
+    <div class="nav-right desktop-nav">
+      <a href="#" class="login">Login / Register</a>
+      <div class="search-btn">
+        <img src="assets/svg/search.png" class="search-icon">
+      </div>
+    </div>
+
+    <!-- HAMBURGER MENU (Mobile) -->
+    <div class="hamburger" onclick="openSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+  </div>
+</header>
+
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-wrapper">
+    <div class="breadcrumb">
+        <p class="home">Homepage</p>
+        <img src="assets/images/greaterthan.png" class="chevron">
+        <p class="current">Contact</p>
+    </div>
+</div>
+
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-left">
+        <h2>Need A Direct Line?</h2>
+        <p>
+            Cras massa et odio donec faucibus in. Vitae pretium massa dolor
+            ullamcorper lectus elit quam.
+        </p>
+
+        <div class="contact-item">
+            <img src="assets/svg/phone.svg">
+            <div>
+                <h4>Phone</h4>
+                <p>(123) 456 7890</p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <img src="assets/svg/email.svg">
+            <div>
+                <h4>Email</h4>
+                <p>contact@thimpress.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- REAL MAP -->
+    <div id="realMap"></div>
+
+</section>
+
+
+<!-- CONTACT FORM -->
+<section class="contact-form">
+    <h2>Contact Us</h2>
+    <p>Your email address will not be published. Required fields are marked *</p>
+
+    <form>
+        <div class="row">
+            <input type="text" placeholder="Name*" required>
+            <input type="email" placeholder="Email*" required>
+        </div>
+
+        <textarea placeholder="Comment" required></textarea>
+
+        <div class="save-check">
+            <input type="checkbox" id="saveinfo">
+            <label for="saveinfo"><span>Save my name, email in this browser for the next time I comment</span></label>
+        </div>
+
+        <button class="submit-btn">Posts Comment</button>
+    </form>
+</section>
+
+
+<!-- FOOTER (Same as before) -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- COLUMN 1 -->
+    <div class="footer-col">
+      <div class="footer-logo">
+        <img src="assets/images/LOGO.png" alt="">
+        <span>EduPress</span>
+      </div>
+
+      <p class="footer-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <!-- COLUMN 2 -->
+    <div class="footer-col">
+      <h4>GET HELP</h4>
+      <p class="footer-link">Contact Us</p>
+      <p class="footer-link">Latest Articles</p>
+      <p class="footer-link">FAQ</p>
+    </div>
+
+    <!-- COLUMN 3 -->
+    <div class="footer-col">
+      <h4>PROGRAMS</h4>
+      <p class="footer-link">Art & Design</p>
+      <p class="footer-link active-orange">Business</p>
+      <p class="footer-link">IT & Software</p>
+      <p class="footer-link">Languages</p>
+      <p class="footer-link">Programming</p>
+    </div>
+
+    <!-- COLUMN 4 -->
+    <div class="footer-col">
+      <h4>CONTACT US</h4>
+
+      <p class="footer-contact">
+        Address: 2321 New Design Str, Lorem Ipsum10 Hudson Yards, USA
+      </p>
+
+      <p class="footer-contact">
+        Tel: + (123) 2500-567-8988<br>
+        Mail: supportlms@gmail.com
+      </p>
+
+      <div class="footer-social">
+        <img src="assets/svg/facebook.png">
+        <img src="assets/svg/pintrest.svg">
+        <img src="assets/svg/x.svg">
+        <img src="assets/svg/insta.svg">
+        <img src="assets/svg/youtube.svg">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    Copyright © 2024 LearnPress LMS | Powered by ThimPress
+  </div>
+</footer>
+
+
+
+<!-- Leaflet Script -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+  const center = [33.5132, 36.2768];
+  const map = L.map('realMap').setView(center, 13);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap'
+  }).addTo(map);
+
+  L.marker(center).addTo(map)
+      .bindPopup('We are here!')
+      .openPopup();
+</script>
+
+<!-- SIDEBAR JS -->
+<script>
+function openSidebar() {
+    document.getElementById("sidebar").classList.add("open");
+    document.getElementById("overlay").classList.add("show");
+}
+
+function closeSidebar() {
+    document.getElementById("sidebar").classList.remove("open");
+    document.getElementById("overlay").classList.remove("show");
+}
+</script>
+
+</body>
+</html>
