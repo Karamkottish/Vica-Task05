@@ -84,7 +84,9 @@ body {
   padding: 0 10px;
   display: inline-block;
 }
-dropdown-content {
+
+/* Hidden by default */
+.dropdown-content {
   display: none;
   position: absolute;
   top: 40px;           
