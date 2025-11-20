@@ -84,12 +84,10 @@ body {
   padding: 0 10px;
   display: inline-block;
 }
-
-/* Hidden by default */
-.dropdown-content {
+dropdown-content {
   display: none;
   position: absolute;
-  top: 40px;           /* aligns perfectly under nav link */
+  top: 40px;           
   left: 0;
   background: #fff;
   border: 1px solid #eee;
