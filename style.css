@@ -290,11 +290,30 @@ body {
   width: 1226px;
   height: 324px;
   margin: 80px auto;
-  padding: 60px 70px;
+  padding: 40px 70px;
   border-radius: 40px;
-  background: linear-gradient(90deg, #D7F4E4 0%, #E6DED3 100%);
+  /* background: linear-gradient(90deg, #D7F4E4 0%, #E6DED3 100%); */
+  background-image: url('assets//images//addons.png');
   position: relative;
   overflow: hidden;
+}
+
+.addons-banner p {
+  width: 40%;
+  margin: 20px 0px 40px 0px;
+}
+
+.addons-banner h2{
+  /* width: 40%; */
+  margin: 20px 0px;
+}
+
+.addons-banner a {
+  background-color: orange;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  color: white;
 }
 
 .addons-floating {
@@ -435,18 +454,23 @@ body {
       #C1EFFF 0%,
       #D7C6FF 100%
   );
-
   display: flex;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
 }
 
-.banner-bg {
+.banner-bg1 {
   position: absolute;
-  right: 0;
+  right: 10px;
   height: 100%;
-  opacity: 0.05;
+}
+
+.banner-bg2 {
+  position: absolute;
+  left: -65px;
+  bottom: 0;
+  width: 25%;
 }
 
 .start-banner-left {

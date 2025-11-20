@@ -71,6 +71,53 @@ body {
   text-decoration: none;
 }
 
+/* ============================= */
+/*      NAVBAR DROPDOWN FIX      */
+/* ============================= */
+
+.dropdown {
+  position: relative;
+}
+
+.drop-btn {
+  cursor: pointer;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+/* Hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;           /* aligns perfectly under nav link */
+  left: 0;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  min-width: 160px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  z-index: 999;
+}
+
+/* Inner links */
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #111;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background: #f5f5f5;
+  color: #ff6d3d;
+}
+
+/* SHOW ON HOVER */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* ============================= */
 /*       BREADCRUMB              */
