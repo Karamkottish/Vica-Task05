@@ -73,6 +73,19 @@ body {
   align-items: center;
   gap: 25px;
 }
+/* Remove underline from Login/Register */
+.nav-right .login {
+  text-decoration: none !important;
+  color: #000 !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Keep it clean even when hovering */
+.nav-right .login:hover {
+  text-decoration: none !important;
+  color: #000 !important;
+}
 
 .search-btn {
   width: 48px;

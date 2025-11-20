@@ -1,0 +1,274 @@
+/* =============================== */
+/*  FULL-WIDTH BREADCRUMB (FIGMA) */
+/* =============================== */
+
+.breadcrumb-bar {
+    width: 100%;
+    background: #F5F5F5;
+    height: 60px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb {
+    width: 1226px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+.breadcrumb .current {
+    color: #FF782D;
+}
+
+
+/* =============================== */
+/*           AUTH SECTION          */
+/* =============================== */
+
+.auth-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 100px;
+}
+
+.auth-box {
+    width: 1226px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* =============================== */
+/*          AUTH CARDS             */
+/* =============================== */
+
+.auth-card {
+    background: #fff;
+    border: 1px solid #EAEAEA;
+    border-radius: 20px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Figma Sizes */
+.auth-card:nth-child(1) {
+    max-width: 609px;
+    height: 406px;
+}
+
+.auth-card:nth-child(2) {
+    max-width: 585px;
+    height: 448px;
+}
+
+
+/* =============================== */
+/*          FORM FIELDS            */
+/* =============================== */
+
+.auth-card h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #111;
+}
+
+.input-group {
+    width: 100%;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.input-group input:focus {
+    border-color: #FF782D;
+    outline: none;
+}
+
+.password-group .eye-icon {
+    width: 20px;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+}
+
+
+/* =============================== */
+/*           ACTIONS               */
+/* =============================== */
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: -10px;
+}
+
+.login-btn,
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    color: white;
+    border: none;
+    border-radius: 26px;
+    background: #FF782D;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lost-password {
+    font-size: 14px;
+    color: #444;
+    text-decoration: none;
+    margin-top: -10px;
+}
+
+.lost-password:hover {
+    color: #FF782D;
+}
+
+
+/* =============================== */
+/*        RESPONSIVENESS           */
+/* =============================== */
+
+/* TABLETS (1024px and below) */
+@media (max-width: 1024px) {
+
+    .auth-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .auth-card {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .breadcrumb {
+        max-width: 95%;
+    }
+}
+
+/* MOBILE (768px and below) */
+@media (max-width: 768px) {
+
+    .breadcrumb-bar {
+        height: 50px;
+    }
+
+    .breadcrumb {
+        font-size: 13px;
+        gap: 6px;
+    }
+
+    .auth-section {
+        margin-top: 40px;
+    }
+
+    .auth-card {
+        padding: 22px;
+        gap: 20px;
+    }
+
+    .auth-card h2 {
+        font-size: 22px;
+    }
+
+    .input-group input {
+        padding: 12px;
+    }
+
+    .login-btn,
+    .register-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+/* SMALL MOBILE (480px and below) */
+@media (max-width: 480px) {
+
+    .breadcrumb {
+        font-size: 12px;
+    }
+
+    .auth-card {
+        padding: 18px;
+    }
+
+    .auth-card h2 {
+        font-size: 20px;
+    }
+
+    .login-btn,
+    .register-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+
+
+/* ====================================================== */
+/*  FIX FOOTER RESPONSIVENESS (THE ISSUE IN YOUR SCREEN)  */
+/* ====================================================== */
+
+.footer-container {
+    width: 100%;
+    max-width: 1226px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* columns responsive */
+@media (max-width: 992px) {
+    .footer-container {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-col {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-col {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+}
