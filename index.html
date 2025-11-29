@@ -15,22 +15,29 @@
         <!-- LOGO -->
         <div class="logo">
             <img src="assets/images/logo.png" class="logo-img">
-            <span class="logo-text">Academy</span>
+
         </div>
 
-        <!-- DESKTOP NAV -->
-        <div class="nav-links">
-            <a href="#" class="active">Home</a>
-            <a href="#">Courses</a>
-            <a href="#">Categories</a>
-            <a href="#">Blog</a>
-            <a href="#">FAQ</a>
-            <a href="#">Contact</a>
+       <!-- DESKTOP NAV -->
+<nav class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="blog.html">Blog</a>
+
+    <div class="dropdown">
+        <a href="#" class="drop-btn">Page ▾</a>
+        <div class="dropdown-content">
+            <a href="contact.html">Contact Us</a>
+            <a href="faq.html">FAQs</a>
         </div>
+    </div>
+</nav>
+
+
 
         <div class="nav-right">
             <a href="#" class="login">Login</a>
-            <div class="search-btn"><img src="assets/icons/search.svg"></div>
+            <div class="search-btn"><img src="assets\svg\search.png"></div>
         </div>
 
         <!-- ✅ MOBILE BUTTON + SIDEBAR + OVERLAY -->
@@ -39,20 +46,21 @@
         <div class="overlay"></div>
 
         <div class="mobile-sidebar">
-            <span class="close-sidebar">&times;</span>
+    <span class="close-sidebar">&times;</span>
 
-            <a href="index.html">Home</a>
-            <a href="courses.html">Courses</a>
-            <a href="categories.html">Categories</a>
-            <a href="blogs.html">Blog</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html">Contact Us</a>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="blog.html">Blog</a>
 
-            <hr style="margin: 15px 0;">
+    <!-- Mobile version of Page dropdown -->
+    <a href="contact.html">Contact Us</a>
+    <a href="faq.html">FAQs</a>
 
-            <a href="login.html">Login</a>
-            <a href="register.html">Register</a>
-        </div>
+    <hr style="margin: 15px 0;">
+
+    <a href="login.html">Login / Register</a>
+</div>
+
 
     </div>
 </nav>
