@@ -1,3 +1,7 @@
+/* ==========================================================
+   GLOBAL RESET & BASE
+========================================================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,27 +11,48 @@
 
 body {
   background: #fff;
+  overflow-x: hidden;
+}
+
+:root {
+  --container: 1226px;
+  --orange: #FF782D;
+  --dark: #000;
+  --text: #444;
+  --gray: #F5F5F5;
+  --radius: 22px;
+  --transition: .3s ease;
+}
+
+/* Generic container */
+.container {
+  width: 90%;
+  max-width: var(--container);
+  margin: auto;
 }
 
 
 
-/*nav*/
+/* ==========================================================
+   NAVBAR
+========================================================== */
 
 .navbar {
   width: 100%;
   background: #ffffff;
   border-bottom: 1px solid #eee;
   padding: 15px 0;
+  position: relative;
+  z-index: 50;
 }
 
 .nav-container {
   width: 90%;
-  max-width: 1400px;
+  max-width: var(--container);
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .logo {
@@ -56,16 +81,13 @@ body {
   text-decoration: none;
   font-size: 16px;
   color: #111;
-  transition: color 0.2s;
+  transition: var(--transition);
 }
 
+.nav-links a:hover,
 .nav-links .active {
-  color: #FF782D;
+  color: var(--orange);
   font-weight: 600;
-}
-
-.nav-links a:hover {
-  color: #FF782D;
 }
 
 .nav-right {
@@ -73,7 +95,7 @@ body {
   align-items: center;
   gap: 25px;
 }
-/* Remove underline from Login/Register */
+
 .nav-right .login {
   text-decoration: none !important;
   color: #000 !important;
@@ -81,17 +103,11 @@ body {
   font-weight: 500;
 }
 
-/* Keep it clean even when hovering */
-.nav-right .login:hover {
-  text-decoration: none !important;
-  color: #000 !important;
-}
-
 .search-btn {
   width: 48px;
   height: 48px;
   border-radius: 24px;
-  border: 2px solid #FF782D;
+  border: 2px solid var(--orange);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,9 +120,10 @@ body {
 }
 
 
-/* --------------------------------------- */
-/*                HERO SECTION             */
-/* --------------------------------------- */
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
 
 .hero {
   width: 100%;
@@ -128,6 +145,7 @@ body {
   font-size: 52px;
   font-weight: 700;
   line-height: 1.1;
+  color: #000;
 }
 
 .hero-content p {
@@ -139,7 +157,7 @@ body {
 .hero-btn {
   display: inline-block;
   margin-top: 30px;
-  background: #FF782D;
+  background: var(--orange);
   padding: 14px 30px;
   color: #fff;
   border-radius: 28px;
@@ -148,12 +166,14 @@ body {
 }
 
 
-/* --------------------------------------- */
-/*             TOP CATEGORIES              */
-/* --------------------------------------- */
+
+/* ==========================================================
+   TOP CATEGORIES
+========================================================== */
 
 .categories {
-  width: 1226px;
+  width: 90%;
+  max-width: var(--container);
   margin: 80px auto;
 }
 
@@ -181,22 +201,26 @@ body {
 .category-card {
   padding: 45px 20px;
   text-align: center;
-  border-radius: 22px;
+  background: #fff;
+  border-radius: var(--radius);
   border: 1px solid #eee;
+  transition: var(--transition);
 }
 
 .category-card.featured {
-  border: 2px solid #FF782D;
+  border: 2px solid var(--orange);
   box-shadow: 0px 8px 18px rgba(255, 120, 45, 0.15);
 }
 
 
-/* --------------------------------------- */
-/*              FEATURED COURSES           */
-/* --------------------------------------- */
+
+/* ==========================================================
+   FEATURED COURSES
+========================================================== */
 
 .courses {
-  width: 1226px;
+  width: 90%;
+  max-width: var(--container);
   margin: 80px auto;
 }
 
@@ -215,16 +239,15 @@ body {
 
 .course-card {
   background: #fff;
-  border-radius: 22px;
+  border-radius: var(--radius);
   border: 1px solid #eee;
   overflow: hidden;
 }
 
 .course-thumb {
-    position: relative;  /* FIXES tag escaping */
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
-
 
 .course-tag {
   position: absolute;
@@ -245,11 +268,6 @@ body {
   display: flex;
   gap: 25px;
   margin-top: 10px;
-}
-
-.icon {
-  width: 14px;
-  margin-right: 5px;
 }
 
 .divider {
@@ -275,25 +293,20 @@ body {
   font-weight: 600;
 }
 
-.view-more {
-  font-size: 14px;
-  text-decoration: none;
-  color: #000;
-}
 
 
-/* --------------------------------------- */
-/*            ADDONS BANNER                */
-/* --------------------------------------- */
+/* ==========================================================
+   ADDONS BANNER
+========================================================== */
 
 .addons-banner {
-  width: 1226px;
+  width: 90%;
+  max-width: var(--container);
   height: 324px;
   margin: 80px auto;
   padding: 40px 70px;
   border-radius: 40px;
-  /* background: linear-gradient(90deg, #D7F4E4 0%, #E6DED3 100%); */
-  background-image: url('assets//images//addons.png');
+  background-image: url('assets/images/addons.png');
   position: relative;
   overflow: hidden;
 }
@@ -301,19 +314,6 @@ body {
 .addons-banner p {
   width: 40%;
   margin: 20px 0px 40px 0px;
-}
-
-.addons-banner h2{
-  /* width: 40%; */
-  margin: 20px 0px;
-}
-
-.addons-banner a {
-  background-color: orange;
-  text-decoration: none;
-  padding: 12px 25px;
-  border-radius: 25px;
-  color: white;
 }
 
 .addons-floating {
@@ -332,17 +332,17 @@ body {
 
 .addons-floating img {
   width: 350px;
-  margin-right: 60px;
-  margin-top: 20px;
 }
 
 
-/* --------------------------------------- */
-/*                  STATS                  */
-/* --------------------------------------- */
+
+/* ==========================================================
+   STATS
+========================================================== */
 
 .stats-section {
-  width: 1240px;
+  width: 90%;
+  max-width: var(--container);
   margin: 80px auto;
   display: flex;
   justify-content: space-between;
@@ -358,361 +358,213 @@ body {
 }
 
 .stat-card h3 {
-  color: #FF7A21;
+  color: var(--orange);
   font-size: 38px;
   font-weight: 700;
 }
 
-/* ======================================== */
-/*     GROW US YOUR SKILL – FIXED DESIGN    */
-/* ======================================== */
+
+
+/* ==========================================================
+   GROW SECTION
+========================================================== */
 
 .grow-section {
-    width: 1226px;
-    margin: 120px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 90%;
+  max-width: var(--container);
+  margin: 120px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .grow-left img {
-    width: 520px;
-    height: auto;
+  width: 520px;
+  height: auto;
 }
 
 .grow-right {
-    width: 50%;
-    padding-left: 40px; /* moves text away from image */
+  width: 50%;
+  padding-left: 40px;
 }
 
-/* Title */
 .grow-title {
-    font-size: 48px;       /* match Figma */
-    font-weight: 700;
-    line-height: 1.25;
-    color: #000;
-    margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-/* Paragraph */
 .grow-desc {
-    font-size: 17px;
-    color: #555;
-    line-height: 1.75;
-    max-width: 520px;
-    margin-bottom: 25px;
+  font-size: 17px;
+  color: #555;
+  line-height: 1.75;
+  max-width: 520px;
+  margin-bottom: 25px;
 }
 
-/* Bullet points */
-.grow-list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 35px;
-}
 
-.grow-list li {
-    font-size: 18px;
-    margin-bottom: 14px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
-.grow-list li::before {
-    content: "✔";
-    color: #2CCE63;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-/* Button */
-.grow-btn {
-    display: inline-block;
-    background: #FF7A21;
-    padding: 16px 40px;
-    border-radius: 35px;
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-}
-
-/* --------------------------------------- */
-/*    START WITH ACADEMY LMS BANNER        */
-/* --------------------------------------- */
+/* ==========================================================
+   START WITH LMS BANNER
+========================================================== */
 
 .start-banner {
-  width: 1226px;
+  width: 90%;
+  max-width: var(--container);
   height: 250px;
   margin: 80px auto;
   padding: 0 60px;
   border-radius: 20px;
-  position: relative;
-
-  background: linear-gradient(
-      90deg,
-      #C1EFFF 0%,
-      #D7C6FF 100%
-  );
+  background: linear-gradient(90deg, #C1EFFF 0%, #D7C6FF 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   overflow: hidden;
-}
-
-.banner-bg1 {
-  position: absolute;
-  right: 10px;
-  height: 100%;
-}
-
-.banner-bg2 {
-  position: absolute;
-  left: -65px;
-  bottom: 0;
-  width: 25%;
-}
-
-.start-banner-left {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  z-index: 10;
-}
-
-.student-icon {
-  width: 110px;
-  height: 110px;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.student-icon img {
-  width: 62px;
-}
-
-.start-title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #000;
 }
 
 .start-buttons {
   display: flex;
-  gap: 25px;
-  z-index: 10;
+  gap: 20px;
 }
 
-.student-btn {
-  padding: 12px 25px;
-  border: 2px solid #FF7A00;
-  border-radius: 999px;
-  color: #FF7A00;
-  background: transparent;
-  font-size: 15px;
-  font-weight: 500;
-}
 
-.instructor-btn {
-  padding: 12px 25px;
-  background: #FF7A00;
-  color: white;
-  border-radius: 999px;
-  font-size: 15px;
-  font-weight: 500;
-}
-/* ============================= */
-/*            FOOTER             */
-/* ============================= */
+
+/* ==========================================================
+   FOOTER
+========================================================== */
 
 .footer {
-    width: 100%;
-    background: #F5F5F5;
-    padding: 80px 0 50px;
-    margin-top: 90px;
+  width: 100%;
+  background: #F5F5F5;
+  padding: 90px 0 50px;
 }
 
 .footer-container {
-    width: 1226px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  width: 90%;
+  max-width: var(--container);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-/* COLUMN BASE */
 .footer-col {
-    width: 23%;
+  width: 23%;
+  min-width: 260px;
+  margin-bottom: 30px;
 }
 
-/* LOGO BLOCK */
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+
+
+/* ==========================================================
+   MOBILE SIDEBAR — RIGHT SLIDE
+========================================================== */
+
+#menu-toggle {
+  display: none;
 }
 
-.footer-logo img {
-    width: 42px;
+/* hamburger button */
+.mobile-menu-btn {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
 }
 
-.footer-logo span {
-    font-size: 26px;
-    font-weight: 700;
-    color: #000;
+/* sidebar container */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100vh;
+  width: 280px;
+  background: #fff;
+  box-shadow: -2px 0 12px rgba(0,0,0,0.15);
+  padding: 60px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  transition: var(--transition);
+  z-index: 9999;
 }
 
-.footer-text {
-    margin-top: 22px;
-    color: #444;
-    font-size: 15px;
-    line-height: 1.6;
-    max-width: 280px;
+.mobile-sidebar a {
+  font-size: 18px;
+  color: #222;
+  text-decoration: none;
 }
 
-/* HEADINGS */
-.footer-col h4 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 25px;
-    color: #000;
-}
-
-/* LINKS TEXT */
-.footer-link {
-    font-size: 16px;
-    color: #444;
-    margin-bottom: 14px;
-}
-
-.footer-link.active-orange {
-    color: #FF782D;
-    font-weight: 600;
-}
-
-/* CONTACT TEXT */
-.footer-contact {
-    line-height: 1.6;
-    font-size: 16px;
-    color: #444;
-    margin-bottom: 20px;
-}
-
-/* SOCIAL ICONS */
-.footer-social {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    margin-top: 10px;
-}
-
-.footer-social img {
-    width: 18px;
-    opacity: 0.9;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.footer-social img:hover {
-    opacity: 1;
-}
-
-/* COPYRIGHT */
-.footer-bottom {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 14px;
-    color: #555;
-}
-/* -------- Dropdown -------- */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.drop-btn {
+.mobile-sidebar .close-sidebar {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 35px;
   cursor: pointer;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background: #fff;
-  border: 1px solid #eee;
-  padding: 10px 0;
-  min-width: 180px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  z-index: 50;
+/* overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  z-index: 999;
 }
 
-.dropdown-content a {
-  display: block;
-  padding: 10px 20px;
-  color: #111;
-  text-decoration: none;
-  transition: 0.2s;
+/* SHOW SIDEBAR */
+#menu-toggle:checked ~ .mobile-sidebar {
+  right: 0;
 }
 
-.dropdown-content a:hover {
-  background: #f5f5f5;
+/* SHOW OVERLAY */
+#menu-toggle:checked ~ .overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+/* LOCK SCROLL ON BODY */
+#menu-toggle:checked ~ body {
+  overflow: hidden !important;
 }
-/* ----------- Large Tablets ----------- */
+
+
+
+/* ==========================================================
+   RESPONSIVE BREAKPOINTS
+========================================================== */
+
+/* ========== 1200px ========== */
 @media (max-width: 1200px) {
 
-  .categories,
-  .courses,
-  .addons-banner,
-  .grow-section,
-  .start-banner,
-  .footer-container,
-  .stats-section {
-    width: 90%;
-  }
-
-  .addons-banner p {
-    width: 60%;
-  }
-
-  .addons-floating {
-    right: -200px;
-    width: 520px;
-  }
-
   .grow-left img {
-    width: 420px;
+    width: 430px;
   }
 
   .grow-title {
-    font-size: 38px;
+    font-size: 40px;
   }
 }
 
-/* ----------- Medium Tablets ----------- */
+
+/* ========== 992px (TABLETS) ========== */
 @media (max-width: 992px) {
 
-  /* NAVBAR */
-  .nav-links {
+  .nav-links,
+  .nav-right {
     display: none;
-  }
-
-  .navbar {
-    position: relative;
   }
 
   .mobile-menu-btn {
     display: block;
-    cursor: pointer;
-    font-size: 28px;
   }
 
-  /* HERO */
   .hero {
     height: 550px;
     background-position: center;
@@ -728,54 +580,39 @@ body {
     font-size: 40px;
   }
 
-  /* GRID → 2 columns */
+  /* 2 column layout */
   .categories-grid,
   .courses-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* STATS */
   .stats-section {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
   }
 
-  .stat-card {
-    width: 280px;
+  .footer-col {
+    width: 45%;
   }
 
-  /* GROW SECTION */
   .grow-section {
     flex-direction: column;
     text-align: center;
+    gap: 35px;
   }
 
   .grow-right {
     width: 100%;
     padding-left: 0;
-    margin-top: 25px;
-  }
-
-  .grow-list li {
-    justify-content: center;
-  }
-
-  /* FOOTER */
-  .footer-container {
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-
-  .footer-col {
-    width: 45%;
   }
 }
 
-/* ----------- Small Tablets & Phones ----------- */
+
+
+/* ========== 768px (Mobile + Tablet Small) ========== */
 @media (max-width: 768px) {
 
-  /* HERO */
   .hero {
     height: 480px;
   }
@@ -786,16 +623,15 @@ body {
   }
 
   .hero-content h1 {
-    font-size: 34px;
+    font-size: 32px;
   }
 
-  /* GRID → 1 column */
+  /* 1 column layout */
   .categories-grid,
   .courses-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Addons banner */
   .addons-banner {
     height: auto;
     padding: 35px;
@@ -809,12 +645,10 @@ body {
     display: none;
   }
 
-  /* GROW IMAGE */
   .grow-left img {
     width: 100%;
   }
 
-  /* Start Banner */
   .start-banner {
     flex-direction: column;
     height: auto;
@@ -827,13 +661,14 @@ body {
     justify-content: center;
   }
 
-  /* FOOTER */
   .footer-col {
     width: 100%;
   }
 }
 
-/* ----------- Small Phones ----------- */
+
+
+/* ========== 480px (Small Phones) ========== */
 @media (max-width: 480px) {
 
   .hero-content h1 {

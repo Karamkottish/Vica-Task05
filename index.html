@@ -9,36 +9,54 @@
 <body>
 
 <!-- ===== NAVBAR ===== -->
-<header class="navbar">
-  <div class="nav-container">
+<nav class="navbar">
+    <div class="nav-container">
+        
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="assets/images/logo.png" class="logo-img">
+            <span class="logo-text">Academy</span>
+        </div>
 
-    <div class="logo">
-      <img src="assets/images/LOGO.png" class="logo-img">
+        <!-- DESKTOP NAV -->
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Categories</a>
+            <a href="#">Blog</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="#" class="login">Login</a>
+            <div class="search-btn"><img src="assets/icons/search.svg"></div>
+        </div>
+
+        <!-- ✅ MOBILE BUTTON + SIDEBAR + OVERLAY -->
+        <label for="menu-toggle" class="mobile-menu-btn">☰</label>
+        <input type="checkbox" id="menu-toggle" />
+        <div class="overlay"></div>
+
+        <div class="mobile-sidebar">
+            <span class="close-sidebar">&times;</span>
+
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="categories.html">Categories</a>
+            <a href="blogs.html">Blog</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact Us</a>
+
+            <hr style="margin: 15px 0;">
+
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+
     </div>
+</nav>
 
-    <nav class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="courses.html">Courses</a>
-      <a href="blog.html">Blog</a>
-      <div class="dropdown">
-    <a href="#" class="drop-btn">Page ▾</a>
-    <div class="dropdown-content">
-        <a href="contact.html">Contact Us</a>
-        <a href="faq.html">FAQs</a>
-    </div>
-</div>
-      <a href="#">Premium Theme</a>
-    </nav>
-
-    <div class="nav-right">
-      <a href="login-register.html" class="login">Login / Register</a>
-      <div class="search-btn">
-        <img src="assets/svg/search.png" class="search-icon">
-      </div>
-    </div>
-
-  </div>
-</header>
 
 
 <!-- ===== HERO SECTION ===== -->
@@ -333,12 +351,13 @@
     <!-- COLUMN 1 -->
     <div class="footer-col">
       <div class="footer-logo">
-        <img src="assets/images/LOGO.png" alt="">
+        <img src="assets/images/logo.png" alt="EduPress Logo" />
         <span>EduPress</span>
       </div>
 
       <p class="footer-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.
       </p>
     </div>
 
@@ -346,40 +365,35 @@
     <div class="footer-col">
       <h4>GET HELP</h4>
       <a href="contact.html" class="footer-link">Contact Us</a>
-<a href="blogs.html" class="footer-link">Latest Articles</a>
-<a href="faq.html" class="footer-link">FAQ</a>
-
+      <a href="articles.html" class="footer-link">Latest Articles</a>
+      <a href="faq.html" class="footer-link">FAQ</a>
     </div>
 
     <!-- COLUMN 3 -->
     <div class="footer-col">
       <h4>PROGRAMS</h4>
-      <p class="footer-link">Art & Design</p>
-      <p class="footer-link active-orange">Business</p>
-      <p class="footer-link">IT & Software</p>
-      <p class="footer-link">Languages</p>
-      <p class="footer-link">Programming</p>
+      <a href="#" class="footer-link">Art & Design</a>
+      <a href="#" class="footer-link">Business</a>
+      <a href="#" class="footer-link">IT & Software</a>
+      <a href="#" class="footer-link">Languages</a>
+      <a href="#" class="footer-link">Programming</a>
     </div>
 
     <!-- COLUMN 4 -->
     <div class="footer-col">
       <h4>CONTACT US</h4>
-
       <p class="footer-contact">
-        Address: 2321 New Design Str, Lorem Ipsum10 Hudson Yards, USA
-      </p>
-
-      <p class="footer-contact">
+        Address: 2321 New Design Str, Lorem Ipsum 10, Hudson Yards, USA<br>
         Tel: + (123) 2500-567-8988<br>
         Mail: supportlms@gmail.com
       </p>
 
       <div class="footer-social">
-        <img src="assets\svg\facebook.png">
-        <img src="assets\svg\pintrest.svg">
-        <img src="assets\svg\x.svg">
-        <img src="assets\svg\insta.svg">
-        <img src="assets\svg\youtube.svg">
+        <img src="assets\svg\facebook.png" alt="fb">
+        <img src="assets\svg\pintrest.svg" alt="pinterest">
+        <img src="assets\svg\x.svg" alt="x">
+        <img src="assets\svg\insta.svg" alt="instagram">
+        <img src="assets\svg\youtube.svg" alt="youtube">
       </div>
     </div>
 
@@ -389,6 +403,7 @@
     Copyright © 2024 LearnPress LMS | Powered by ThimPress
   </div>
 </footer>
+
 
 
 </body>
