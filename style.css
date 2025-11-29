@@ -663,3 +663,196 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* ----------- Large Tablets ----------- */
+@media (max-width: 1200px) {
+
+  .categories,
+  .courses,
+  .addons-banner,
+  .grow-section,
+  .start-banner,
+  .footer-container,
+  .stats-section {
+    width: 90%;
+  }
+
+  .addons-banner p {
+    width: 60%;
+  }
+
+  .addons-floating {
+    right: -200px;
+    width: 520px;
+  }
+
+  .grow-left img {
+    width: 420px;
+  }
+
+  .grow-title {
+    font-size: 38px;
+  }
+}
+
+/* ----------- Medium Tablets ----------- */
+@media (max-width: 992px) {
+
+  /* NAVBAR */
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+  }
+
+  /* HERO */
+  .hero {
+    height: 550px;
+    background-position: center;
+  }
+
+  .hero-content {
+    left: 40px;
+    top: 100px;
+    max-width: 300px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  /* GRID → 2 columns */
+  .categories-grid,
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* STATS */
+  .stats-section {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .stat-card {
+    width: 280px;
+  }
+
+  /* GROW SECTION */
+  .grow-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .grow-right {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 25px;
+  }
+
+  .grow-list li {
+    justify-content: center;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer-col {
+    width: 45%;
+  }
+}
+
+/* ----------- Small Tablets & Phones ----------- */
+@media (max-width: 768px) {
+
+  /* HERO */
+  .hero {
+    height: 480px;
+  }
+
+  .hero-content {
+    left: 20px;
+    top: 80px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  /* GRID → 1 column */
+  .categories-grid,
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Addons banner */
+  .addons-banner {
+    height: auto;
+    padding: 35px;
+  }
+
+  .addons-banner p {
+    width: 100%;
+  }
+
+  .addons-floating {
+    display: none;
+  }
+
+  /* GROW IMAGE */
+  .grow-left img {
+    width: 100%;
+  }
+
+  /* Start Banner */
+  .start-banner {
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .start-buttons {
+    justify-content: center;
+  }
+
+  /* FOOTER */
+  .footer-col {
+    width: 100%;
+  }
+}
+
+/* ----------- Small Phones ----------- */
+@media (max-width: 480px) {
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-btn {
+    padding: 12px 25px;
+  }
+
+  .stat-card {
+    width: 100%;
+  }
+
+  .grow-title {
+    font-size: 28px;
+  }
+}
