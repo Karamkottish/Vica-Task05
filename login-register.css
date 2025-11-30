@@ -1,7 +1,3 @@
-/* =============================== */
-/*  FULL-WIDTH BREADCRUMB (FIGMA) */
-/* =============================== */
-
 .breadcrumb-bar {
     width: 100%;
     background: #F5F5F5;
@@ -26,11 +22,6 @@
     color: #FF782D;
 }
 
-
-/* =============================== */
-/*           AUTH SECTION          */
-/* =============================== */
-
 .auth-section {
     width: 100%;
     display: flex;
@@ -46,11 +37,6 @@
     gap: 30px;
     flex-wrap: wrap;
 }
-
-
-/* =============================== */
-/*          AUTH CARDS             */
-/* =============================== */
 
 .auth-card {
     background: #fff;
@@ -75,11 +61,6 @@
     max-width: 585px;
     height: 448px;
 }
-
-
-/* =============================== */
-/*          FORM FIELDS            */
-/* =============================== */
 
 .auth-card h2 {
     font-size: 26px;
@@ -113,12 +94,6 @@
     transform: translateY(-50%);
     opacity: 0.7;
 }
-
-
-/* =============================== */
-/*           ACTIONS               */
-/* =============================== */
-
 .remember-me {
     display: flex;
     align-items: center;
@@ -151,11 +126,6 @@
 }
 
 
-/* =============================== */
-/*        RESPONSIVENESS           */
-/* =============================== */
-
-/* TABLETS (1024px and below) */
 @media (max-width: 1024px) {
 
     .auth-box {
@@ -173,7 +143,6 @@
     }
 }
 
-/* MOBILE (768px and below) */
 @media (max-width: 768px) {
 
     .breadcrumb-bar {
@@ -209,7 +178,6 @@
     }
 }
 
-/* SMALL MOBILE (480px and below) */
 @media (max-width: 480px) {
 
     .breadcrumb {
@@ -231,12 +199,6 @@
     }
 }
 
-
-
-/* ====================================================== */
-/*  FIX FOOTER RESPONSIVENESS (THE ISSUE IN YOUR SCREEN)  */
-/* ====================================================== */
-
 .footer-container {
     width: 100%;
     max-width: 1226px;
@@ -249,7 +211,7 @@
     flex-wrap: wrap;
 }
 
-/* columns responsive */
+
 @media (max-width: 992px) {
     .footer-container {
         text-align: center;

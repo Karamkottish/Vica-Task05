@@ -1,4 +1,3 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +8,6 @@
 body {
   background: #fff;
 }
-
-/* ========================= */
-/*        NAVBAR             */
-/* ========================= */
 
 .navbar {
   width: 100%;
@@ -33,7 +28,6 @@ body {
   height: 32px;
 }
 
-/* MENU */
 .nav-center {
   width: 760px;
   height: 72px;
@@ -62,7 +56,6 @@ body {
   justify-content: center;
 }
 
-/* RIGHT */
 .nav-right {
   display: flex;
   align-items: center;
@@ -89,10 +82,6 @@ body {
 .search-btn img {
   width: 20px;
 }
-
-/* ========================= */
-/*       BREADCRUMB          */
-/* ========================= */
 
 .breadcrumb-bar {
   width: 100%;
@@ -124,10 +113,6 @@ body {
   width: 8px;
   opacity: 0.6;
 }
-
-/* ========================= */
-/*   PAGE TITLE + SEARCH     */
-/* ========================= */
 
 .courses-page-header {
   width: 1226px;
@@ -169,10 +154,6 @@ body {
   width: 18px;
   opacity: 0.8;
 }
-
-/* ========================= */
-/*       COURSES LIST        */
-/* ========================= */
 
 .courses-list {
   width: 1226px;
@@ -273,10 +254,6 @@ body {
   color: #000;
 }
 
-/* ========================= */
-/*        PAGINATION         */
-/* ========================= */
-
 .pagination {
   width: 1226px;
   margin: 40px auto 80px;
@@ -302,10 +279,6 @@ body {
   color: #fff;
 }
 
-/* ========================= */
-/*          FOOTER           */
-/* ========================= */
-
 .footer {
   background: #f4f4f4;
   padding: 60px 0 40px;
@@ -330,14 +303,6 @@ body {
   margin-top: 40px;
 }
 
-/* ========================================================= */
-/*                     RESPONSIVE DESIGN                     */
-/* ========================================================= */
-
-
-/* ————————————————————— */
-/* LARGE LAPTOP (≤ 1400px) */
-/* ————————————————————— */
 @media (max-width: 1400px) {
   .navbar-inner,
   .breadcrumb-inner,
@@ -352,9 +317,6 @@ body {
   }
 }
 
-/* ————————————————————— */
-/* TABLET LANDSCAPE (≤ 1200px) */
-/* ————————————————————— */
 @media (max-width: 1200px) {
   .course-list-card {
     height: auto;
@@ -365,13 +327,9 @@ body {
     height: 220px;
   }
 }
-
-/* ————————————————————— */
-/* TABLET (≤ 992px) */
-/* ————————————————————— */
 @media (max-width: 992px) {
 
-  /* stack search/title */
+  
   .courses-page-header {
     flex-direction: column;
     gap: 15px;
@@ -396,18 +354,16 @@ body {
     width: 100%;
   }
 
-  /* breadcrumb shrink */
+  
   .crumb {
     font-size: 16px;
   }
 }
 
-/* ————————————————————— */
-/* MOBILE (≤ 768px) */
-/* ————————————————————— */
+
 @media (max-width: 768px) {
 
-  /* hide large nav menu */
+  
   .nav-center {
     display: none;
   }
@@ -432,16 +388,13 @@ body {
     width: 92%;
   }
 
-  /* footer 1 column */
+
   .footer-container {
     grid-template-columns: 1fr;
     gap: 35px;
   }
 }
 
-/* ————————————————————— */
-/* SMALL MOBILE (≤ 480px) */
-/* ————————————————————— */
 @media (max-width: 480px) {
 
   .search-box {

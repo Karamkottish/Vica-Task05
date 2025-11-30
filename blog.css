@@ -84,8 +84,6 @@ body {
   padding: 0 10px;
   display: inline-block;
 }
-
-/* Hidden by default */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -99,7 +97,6 @@ body {
   z-index: 999;
 }
 
-/* Inner links */
 .dropdown-content a {
   display: block;
   padding: 12px 16px;
@@ -114,25 +111,19 @@ body {
   color: #ff6d3d;
 }
 
-/* SHOW ON HOVER */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* ============================= */
-/*       BREADCRUMB              */
-/* ============================= */
-
-/* LIGHT GREY BAR UNDER NAVBAR */
 .breadcrumb-bar {
   width: 100%;
-  background: #f5f5f5;       /* exact light grey */
-  padding: 18px 0;           /* matches screenshot spacing */
+  background: #f5f5f5;       
+  padding: 18px 0;          
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
 
-/* breadcrumb inside grey bar */
+
 .breadcrumb {
   width: 90%;
   max-width: 1400px;
@@ -146,14 +137,8 @@ body {
 
 .breadcrumb img {
   width: 10px;
-  opacity: 0.5;  /* Matches screenshot lighter arrow */
+  opacity: 0.5; 
 }
-
-
-
-/* ========================= */
-/*   BLOG HEADER (FIGMA)    */
-/* ========================= */
 
 .blog-header {
   width: 1225px;
@@ -169,14 +154,12 @@ body {
   font-weight: 600;
 }
 
-/* RIGHT SIDE GROUP */
 .listing-right {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-/* SEARCH INPUT */
 .search-wrapper {
   width: 270px;
   border-bottom: 2px solid #ccc;
@@ -200,7 +183,6 @@ body {
   opacity: 0.9;
 }
 
-/* VIEW ICONS */
 .icon-view {
   width: 20px;
   cursor: pointer;
@@ -213,11 +195,6 @@ body {
           sepia(93%) saturate(3148%) hue-rotate(358deg)
           brightness(100%) contrast(101%);
 }
-
-
-/* ========================= */
-/*      BLOG GRID            */
-/* ========================= */
 
 .blog-grid {
     width: 1226px;
@@ -285,11 +262,6 @@ body {
     line-height: 1.5;
 }
 
-
-/* ========================= */
-/*       PAGINATION          */
-/* ========================= */
-
 .pagination {
   display: flex;
   justify-content: center;
@@ -316,12 +288,6 @@ body {
   color: #fff;
   border-color: #000;
 }
-
-
-/* ========================= */
-/*          FOOTER           */
-/* ========================= */
-
 .footer {
   background: #f4f4f4;
   padding: 60px 0 40px;
@@ -412,14 +378,7 @@ body {
   border-top: 1px solid #ddd;
   margin-top: 40px;
 }
-/* ========================================================= */
-/*                     RESPONSIVE DESIGN                     */
-/* ========================================================= */
 
-
-/* ——————————————————————————————— */
-/*  LARGE LAPTOP (max-width: 1400px)  */
-/* ——————————————————————————————— */
 @media (max-width: 1400px) {
 
   .blog-header,
@@ -432,10 +391,6 @@ body {
   }
 }
 
-
-/* ——————————————————————————————— */
-/*  TABLET LANDSCAPE (max-width: 1200px) */
-/* ——————————————————————————————— */
 @media (max-width: 1200px) {
 
   .blog-row {
@@ -455,13 +410,8 @@ body {
   }
 }
 
-
-/* ——————————————————————————————— */
-/*  TABLET PORTRAIT (max-width: 992px) */
-/* ——————————————————————————————— */
 @media (max-width: 992px) {
 
-  /* navbar shrink */
   .nav-container {
     width: 95%;
   }
@@ -470,7 +420,6 @@ body {
     gap: 25px;
   }
 
-  /* BLOG HEADER becomes vertical */
   .blog-header {
     flex-direction: column;
     align-items: flex-start;
@@ -484,7 +433,6 @@ body {
     justify-content: flex-start;
   }
 
-  /* blog cards adjust */
   .blog-row {
     gap: 25px;
   }
@@ -493,30 +441,24 @@ body {
     width: 48%;
   }
 
-  /* breadcrumb text shrink */
   .breadcrumb {
     font-size: 13px;
   }
 }
 
-
-
-/* ——————————————————————————————— */
-/*  MOBILE (max-width: 768px) */
-/* ——————————————————————————————— */
 @media (max-width: 768px) {
 
-  /* hide desktop menu */
+
   .nav-links {
     display: none;
   }
 
-  /* breadcrumb padding */
+  
   .breadcrumb-bar {
     padding: 14px 0;
   }
 
-  /* header fully stacked */
+  
   .blog-header {
     margin-top: 40px;
     width: 92%;
@@ -534,7 +476,6 @@ body {
     width: 160px;
   }
 
-  /* blog cards */
   .blog-card {
     width: 100%;
   }
@@ -544,14 +485,12 @@ body {
     gap: 30px;
   }
 
-  /* pagination smaller */
   .pagination span {
     width: 36px;
     height: 36px;
     font-size: 14px;
   }
 
-  /* footer becomes 1 column */
   .footer-container {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -564,13 +503,8 @@ body {
 }
 
 
-
-/* ——————————————————————————————— */
-/*  SMALL MOBILE (max-width: 480px) */
-/* ——————————————————————————————— */
 @media (max-width: 480px) {
 
-  /* search input super small */
   .search-wrapper {
     width: 130px;
   }

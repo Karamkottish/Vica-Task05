@@ -402,12 +402,6 @@ body {
   margin-bottom: 25px;
 }
 
-
-
-/* ==========================================================
-   START WITH LMS BANNER
-========================================================== */
-
 .start-banner {
   width: 90%;
   max-width: var(--container);
@@ -427,12 +421,6 @@ body {
   display: flex;
   gap: 20px;
 }
-
-
-
-/* ==========================================================
-   FOOTER
-========================================================== */
 
 .footer {
   width: 100%;
@@ -455,17 +443,10 @@ body {
   margin-bottom: 30px;
 }
 
-
-
-/* ==========================================================
-   MOBILE SIDEBAR — RIGHT SLIDE
-========================================================== */
-
 #menu-toggle {
   display: none;
 }
 
-/* hamburger button */
 .mobile-menu-btn {
   display: none;
   font-size: 32px;
@@ -473,7 +454,6 @@ body {
   user-select: none;
 }
 
-/* sidebar container */
 .mobile-sidebar {
   position: fixed;
   top: 0;
@@ -504,7 +484,6 @@ body {
   cursor: pointer;
 }
 
-/* overlay */
 .overlay {
   position: fixed;
   top: 0;
@@ -518,29 +497,19 @@ body {
   z-index: 999;
 }
 
-/* SHOW SIDEBAR */
 #menu-toggle:checked ~ .mobile-sidebar {
   right: 0;
 }
 
-/* SHOW OVERLAY */
 #menu-toggle:checked ~ .overlay {
   opacity: 1;
   visibility: visible;
 }
 
-/* LOCK SCROLL ON BODY */
 #menu-toggle:checked ~ body {
   overflow: hidden !important;
 }
 
-
-
-/* ==========================================================
-   RESPONSIVE BREAKPOINTS
-========================================================== */
-
-/* ========== 1200px ========== */
 @media (max-width: 1200px) {
 
   .grow-left img {
@@ -553,7 +522,6 @@ body {
 }
 
 
-/* ========== 992px (TABLETS) ========== */
 @media (max-width: 992px) {
 
   .nav-links,
@@ -580,7 +548,6 @@ body {
     font-size: 40px;
   }
 
-  /* 2 column layout */
   .categories-grid,
   .courses-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -610,7 +577,6 @@ body {
 
 
 
-/* ========== 768px (Mobile + Tablet Small) ========== */
 @media (max-width: 768px) {
 
   .hero {
@@ -626,7 +592,6 @@ body {
     font-size: 32px;
   }
 
-  /* 1 column layout */
   .categories-grid,
   .courses-grid {
     grid-template-columns: 1fr;
@@ -668,7 +633,6 @@ body {
 
 
 
-/* ========== 480px (Small Phones) ========== */
 @media (max-width: 480px) {
 
   .hero-content h1 {

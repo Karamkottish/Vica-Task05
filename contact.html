@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact – EduPress</title>
 
-    <!-- Styles -->
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="responsive.css">
 
-    <!-- Leaflet -->
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
-    <!-- Google Fonts -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- MOBILE SIDEBAR MENU -->
+
 <div id="sidebar" class="sidebar">
     <div class="close-btn" onclick="closeSidebar()">✕</div>
 
@@ -34,7 +34,7 @@
 
 <div id="overlay" class="overlay" onclick="closeSidebar()"></div>
 
-<!-- NAVBAR -->
+
 <header class="navbar">
   <div class="nav-container">
 
@@ -65,7 +65,7 @@
       </div>
     </div>
 
-    <!-- HAMBURGER MENU (Mobile) -->
+    
     <div class="hamburger" onclick="openSidebar()">
         <span></span>
         <span></span>
@@ -114,13 +114,13 @@
         </div>
     </div>
 
-    <!-- REAL MAP -->
+    
     <div id="realMap"></div>
 
 </section>
 
 
-<!-- CONTACT FORM -->
+
 <section class="contact-form">
     <h2>Contact Us</h2>
     <p>Your email address will not be published. Required fields are marked *</p>
@@ -143,11 +143,11 @@
 </section>
 
 
-<!-- FOOTER (Same as before) -->
+
 <footer class="footer">
   <div class="footer-container">
 
-    <!-- COLUMN 1 -->
+    
     <div class="footer-col">
       <div class="footer-logo">
         <img src="assets/images/LOGO.png" alt="">
@@ -159,7 +159,7 @@
       </p>
     </div>
 
-    <!-- COLUMN 2 -->
+   
     <div class="footer-col">
       <h4>GET HELP</h4>
       <p class="footer-link">Contact Us</p>
@@ -167,7 +167,6 @@
       <p class="footer-link">FAQ</p>
     </div>
 
-    <!-- COLUMN 3 -->
     <div class="footer-col">
       <h4>PROGRAMS</h4>
       <p class="footer-link">Art & Design</p>
@@ -177,7 +176,6 @@
       <p class="footer-link">Programming</p>
     </div>
 
-    <!-- COLUMN 4 -->
     <div class="footer-col">
       <h4>CONTACT US</h4>
 
@@ -208,7 +206,6 @@
 
 
 
-<!-- Leaflet Script -->
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <script>
@@ -225,7 +222,6 @@
       .openPopup();
 </script>
 
-<!-- SIDEBAR JS -->
 <script>
 function openSidebar() {
     document.getElementById("sidebar").classList.add("open");

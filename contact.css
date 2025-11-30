@@ -1,4 +1,3 @@
-/* GLOBAL FIX — Prevent Horizontal Scrolling*/
 html, body {
     width: 100%;
     max-width: 100%;
@@ -34,20 +33,12 @@ html, body {
     color: #111;
     font-weight: 500;
 }
-
-
-
-/* open STREET MAP*/
 #realMap {
     width: 100%;
     height: 390px;
     border-radius: 20px;
     overflow: hidden;
 }
-
-
-
-/* CONTACT SECTION*/
 .contact-section {
     width: 100%;
     max-width: 1200px;
@@ -94,10 +85,6 @@ html, body {
     font-size: 16px;
     font-weight: 600;
 }
-
-
-
-/*CONTACT FORM*/
 .contact-form {
     width: 100%;
     max-width: 900px;
@@ -138,10 +125,6 @@ textarea {
     height: 140px;
     resize: none;
 }
-
-
-
-/* CHECKBOX */
 .save-check {
     display: flex;
     align-items: center;
@@ -162,10 +145,6 @@ textarea {
     font-size: 16px;
     color: #555;
 }
-
-
-
-/*BUTTON*/
 .submit-btn {
     display: inline-flex;
     align-items: center;
@@ -187,10 +166,6 @@ textarea {
 .submit-btn:hover {
     background: #e76a00;
 }
-
-
-
-/*SIDEBAR (MOBILE) */
 .sidebar {
     position: fixed;
     top: 0;
@@ -233,10 +208,6 @@ textarea {
     display: block;
     z-index: 9000;
 }
-
-
-
-/* HAMBURGER*/
 .hamburger {
     display: none;
     flex-direction: column;
@@ -251,9 +222,6 @@ textarea {
     border-radius: 3px;
 }
 
-
-
-/*RESPONSIVENESS*/
 @media (max-width: 992px) {
 
     .desktop-nav,
@@ -293,10 +261,6 @@ textarea {
         width: 100%;
     }
 }
-
-
-
-/*FOOTER*/
 .footer {
     background: #f8f8f8;
     padding: 50px 0;
